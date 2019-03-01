@@ -169,7 +169,7 @@
         }
         li{
             background: #f4f3ef;
-             margin-left: 10px;
+            margin-left: 10px;
             float: left;
             width:290px;
             height: 450px;
@@ -196,6 +196,7 @@
     bottom: 32px;
     text-align: center;
     a{
+        text-decoration: none;
         display: inline-block;
         width: 116px;
         height: 34px;
@@ -244,5 +245,61 @@
             }
         }
     }
-
+.nbc-new1-box{
+    ul{
+        li{
+            position: relative;
+            img{
+                width:290px;
+                height: 248px;
+                
+            }
+            p{
+                text-align: center;
+                color: #f35c49;
+            }
+        }
+    }
+   
+}
+.nb-mall-list{
+    width:100%;
+  
+    background: #f4f3ef;
+    .nbc-new2-box{
+        width:1200px;
+        height: 100%;
+        margin: 0 auto;
+        ul{
+            margin-bottom: 20px;
+            li{
+                background: #fff;
+                margin-left: 10px;
+                float: left;
+                width:290px;
+                height: 334px; 
+                img{
+                    width:290px;
+                    height: 200px; 
+                }
+                h3{
+                    line-height: 100px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    color: #222;
+                    margin-bottom: 12px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+.service-left{
+    width:49%;
+    height: 100px;
+    background: #fff;
+    float: left;
+}
 

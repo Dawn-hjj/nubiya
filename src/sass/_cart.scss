@@ -34,6 +34,7 @@ thead{
 tbody{
    width: 1170px;
    tr{
+     //  display: none;
         width: 1170px;
         td{
             text-align: center;
@@ -74,6 +75,7 @@ tfoot{
         span{
             color: #606366;
             font-size: 16px;
+            cursor: pointer;
         }
         input{
             width: 45px;
@@ -128,7 +130,8 @@ tfoot{
                 overflow: hidden;
                 margin-top: 15px;
             .pay-continue{
-             margin-right: 10px;
+            text-decoration: none;
+            margin-right: 10px;
             display: block;
             padding: 10px;
             color: #e8380d;
@@ -141,3 +144,16 @@ tfoot{
     }
     
 }
+.empty-cart{
+    height: 98px;
+    padding: 80px 0 50px;
+    color: #333;
+    .empty-cart-msg {
+    height: 98px;
+    line-height: 20px;
+    font-size: 14px;
+    padding-left: 341px;
+    padding-top: 25px;
+    }
+}
+    

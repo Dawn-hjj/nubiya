@@ -49,7 +49,13 @@
         var $last = $('.piclist li:last').clone(true);
         $('.piclist').append($first);
         $('.piclist').prepend($last);
-        $('.piclist').width($('.piclist li').length * $('.piclist li').eq(0).width()).css('left', '-1519px');
+       //console.log($('.main ul li').length)
+   		var $offset=parseInt(document.body.clientWidth)
+        $('.main').width($offset);
+        $('.main ul li').width($offset);
+        $('.main ul li img').width($offset);
+        
+        $('.piclist').width($('.piclist li').length * $('.piclist li').eq(0).width()).css('left', -$offset+'px');
         $('.carousel-indicators li').click(function() {
             if (bstop) {
                 $num = $(this).index();
@@ -80,32 +86,32 @@
 	function tab() {
             $('.carousel-indicators li').eq($num).addClass('active').siblings('.carousel-indicators li').removeClass('active');
             $('.piclist').animate({
-                left: -1519* ($num + 1) + 'px'
+                left: -$offset* ($num + 1) + 'px'
             }, 200, function() {
-                if (parseInt($('.piclist').css('left')) == -1519 * ($picnum + 1)) {
-                    $('.piclist').css('left', '-1519px');
+                if (parseInt($('.piclist').css('left')) == -$offset * ($picnum + 1)) {
+                    $('.piclist').css('left', -$offset+'px');
                     $num = 0;
                 }
                 if (parseInt($('.piclist').css('left')) == 0) {
-                    $('.piclist').css('left', -1519 * $picnum + 'px');
+                    $('.piclist').css('left', -$offset * $picnum + 'px');
                     $num = 2;
                 }
                 bstop=true;
             })
         }
 	//轮播图的自动播放
-	var timer=setInterval(function(){
-		$('#left').click()
-	},3000)
-	$('.main').hover(function(){
-		$('#left,#right').show();
-		clearInterval(timer);
-	},function(){
-		$('#left,#right').hide();
-	   timer=setInterval(function(){
-		$('#left').click()
-	},3000)
-	})
+//	var timer=setInterval(function(){
+//		$('#left').click()
+//	},3000)
+//	$('.main').hover(function(){
+//		$('#left,#right').show();
+//		clearInterval(timer);
+//	},function(){
+//		$('#left,#right').hide();
+//	   timer=setInterval(function(){
+//		$('#left').click()
+//	},3000)
+//	})
 })();
 //固定定位部分的效果
 
@@ -162,6 +168,3 @@
 //		$right.click();
 //	},5000);
 // })();
-//;(function(){
-//	
-//})()

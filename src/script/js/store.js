@@ -24,12 +24,13 @@
 								<p>${value.price}</p>
 								<div class="nbc-pro-btn">
 									<a href="/js1810/nubiya/src/details.html? sid=${value.sid}" class="btn-info">查看详情</a>
-									<a class="btn-sell">立即购买</a>
+									<a class="btn-sell" href="/js1810/nubiya/src/details.html? sid=${value.sid}">立即购买</a>
 								</div>
 							</li>
 			`;
 		});
 		$('.hotblock ul').prepend($html);
+//		懒加载
 		$('img.lazy').lazyload({
 			effect:'fadeIn'
 		})

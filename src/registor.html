@@ -11,16 +11,29 @@
 		<div class="warp">
 			<div class="logo">
 			</div>
-			<form class="registorform">
+			<form  id='form1' action="http://10.31.162.63/js1810/nubiya/php/registor.php" method="post">
 				<div>
-					<input type="text"   id="mobile"   placeholder="请输入手机号" />
-					<input type="text"  id='passwordMobile'   placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" />
-					<input type="text" id=' mobile_captcha '     placeholder="请输入验证码" />
-					<img src="https://account.nubia.com/verification/draw.action">
-					<input type="text" id='mobileValidateCode '  placeholder="请输入手机的验证码" />
-					<input type="button" value="获取验证码">
+					<p>
+						<label for="mobile"></label>
+						<input type="text" name="mobile" id="mobile"   placeholder="请输入手机号" />
+						<label id="phone-error" for="mobile" class="error"></label>
+					</p>
+					<p>
+						<label for="password"></label>
+						<input type="text"  name="password"id='password'placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" />
+					    <label id="password-error" for='password' class="error"></label>
+				    </p>
+				    <p>
+				    	<label for="yzm"><label>
+				    	<input type="text"  name="yzm" id='mobile_captcha' placeholder="请输入验证码" />
+					    <label id="yzm-error"  for='yzm' class="error"></label>
+					<!--</p>
+					  
+						<input type="text" id='mobileValidateCode 'placeholder="请输入手机的验证码" />
+						<input type="button" value="获取验证码">
+					</p>-->
 					<p><input type="checkbox" />我已阅读并接受 <a href=""class="lj">用户协议</a>和 <a href=""class="lj">隐私政策</a></p>
-					<input type="submit"  id='regButton '    value="提交"/>
+					<input type="submit"  id='submit ' name='submit'   value="注册"/>
 					<p style="text-align: right;"><span>已有账号，<a href="" class="lj">直接登录</a></span></p>
 				</div>
 			</form>
@@ -30,9 +43,10 @@
 				<p> 2012-2018 努比亚 版权所有 <a>粤ICP备10006213号-2</a> ICP经营许可证编号：粤B2-20120688<a><img src="https://account.nubia.com/res1/images/govIcon.png"></a> 努比亚技术有限公司</p>
 			</div>
 		</footer>
-		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js" ></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js" ></script>
     <!--<script src="../../day29/jquery.js" type="text/javascript" charset="utf-8"></script>-->
-	<script src="script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>                                                                                                                                   hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn 
+	<script src="script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>  
+	<script src="script/js/registor.js"></script>
 	</body>
 
 </html>

@@ -11,12 +11,21 @@
 			<div class="logo">	
 			</div>
 			<form class="loginForm">
+				
 				<span class="login-sp"><a>努比亚账号登录</a><a>手机验证码登录</a></span>
-				<input type="text" placeholder="邮箱/手机号码/用户名"/>
-				<input type="password" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" />
+				<p>
+				  <label for="mobile" ></label>
+					<input type="text" name="mobile" id="mobile" placeholder="邮箱/手机号码/用户名"/>
+				 <label id="phone-error" for="mobile" class="error"></label>
+				</p>
+				<p>
+				 <label for="password"> </label>
+						<input type="password" id="password" name="password"   placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" />
+				 <label label id="password-error" for='password' class="error"></label>
+				</p>
 				<input type="button" value="立即登录" class="btn-login"/>
 				<div class="register-now">
-					<a>注册新账号</a>
+					<a href="http://10.31.162.63/js1810/nubiya/src/registor.html?">注册新账号</a>
 					<span></span>
 					<a>忘记密码？</a>
 				</div>
@@ -26,8 +35,14 @@
 			
 		</footer>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js" ></script> 
+		<!--<script src="script/js/jquery.validate.js"></script>-->
+	 
 	 <script src="script/js/login.js"></script>
-	 <script src="script/js/details.js"></script>
+	 <!--<script src="script/js/registor.js"></script>-->
+
+		
+	
+     <!--<script src="script/js/details.js"></script>-->
 		<script type="text/javascript">
 			$('footer').load('registor.html footer',function(){})
 		</script>
